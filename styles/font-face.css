@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "GothamRounded";
+    font-weight: 400;
+    src: url("../assets/fonts/GothamRounded-Medium.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "GothamRounded";
+    font-weight: 700;
+    src: url("../assets/fonts/GothamRounded-Bold.otf") format("opentype");
+}
