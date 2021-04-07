@@ -303,19 +303,17 @@ body {
     border-radius: 25px;
     text-align: center;
     color: white;
-    border: 1px solid #333334;
     white-space: nowrap;
     padding: .5em 3em;
 }
 
 .button--primary {
-    background-color: white;
+    background-color: var(--primary-color);
     color: #333334;
     transition: all .5s ease-in-out;
 }
 
 .button--primary:hover {
-    border: 1px solid white;
     color: #333334;
     text-decoration: none;
     text-underline: none;
@@ -356,7 +354,7 @@ body {
 .epigraph {
     width: 100%;
     background-color: rgba(0,0,0,0.8);
-    height: 25%;
+    height: 15%;
     padding: 1em 0;
     display: flex;
     align-items: center;
@@ -395,6 +393,7 @@ body {
 }
 
 .btn-social {
+    font-size: 1.5em;
     height: 2.5rem;
     width: 2.5rem;
     display: inline-flex;
@@ -403,30 +402,36 @@ body {
     padding: 0;
     border-radius: 100%;
     transition: all .5s;
-    color: white;
+    color: #d9d9d9;
 }
 
 .btn-social:hover {
-    border-color: unset;
-    color: #333334;
-    background-color: #ffffff;
+    color: white;
+    background-color: transparent;
     transform: scale(1.5);
 }
 
 .btn-social.hover {
-    border-color: unset;
-    color: #333334;
-    background-color: #ffffff;
-    transform: scale(1.2);
+    color: white;
+    background-color: transparent;
+    transform: scale(1.3);
 }
 
 .btn-light {
     border-color: #333334;
 }
 
+span .fa-circle {
+    color: #ff7912;
+}
+
 #nosotros {
     padding: 15em 0 30em 0;
     background: var(--primary-color);
+}
+
+#ideas h4 {
+    font-size: 1.2rem;
 }
 
 #navbarResponsive {
@@ -461,7 +466,7 @@ body {
     background: white;
     position: relative;
     top: -200px;
-    padding: 15em 0;
+    padding: 5em 0;
 }
 
 #ideas h2 {
