@@ -308,17 +308,18 @@ body {
 }
 
 .button--primary {
-    background-color: var(--primary-color);
-    color: #333334;
-    transition: all .5s ease-in-out;
+    background: linear-gradient(to right, #fbebd6 0%,#fba257 17%,#fba257 17%,#ff7912 39%,#f58723 61%,#ff8105 84%,#ffd205 100%);
+    background-color: #ffa562;
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    color: white;
+    transition: all .3s ease-in-out;
 }
 
 .button--primary:hover {
-    color: #333334;
-    text-decoration: none;
-    text-underline: none;
-    background-color: #333334;
     color: white;
+    text-decoration: none;
+    background: #333334;
 }
 
 .page-section {
@@ -351,20 +352,11 @@ body {
     padding-bottom: 1em;
 }
 
-.epigraph {
-    width: 100%;
-    background-color: rgba(0,0,0,0.8);
-    height: 15%;
-    padding: 1em 0;
-    display: flex;
-    align-items: center;
-}
-
-.epigraph h3 {
-    font-size: 1.5rem;
+#outstanding h3 {
+    font-size: 3.5rem;
     line-height: 1.4;
     font-weight: 700;
-    color: white;
+    color: #f5a900;
 }
 
 .circle-for-fa {
@@ -444,8 +436,9 @@ span .fa-circle {
 
 #outstanding {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     height: 45em;
+    padding: 20em 0;
     background-image: url("../assets/outstanding.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -453,7 +446,6 @@ span .fa-circle {
     position: relative;
     top: -200px;
     clip-path: polygon(100% 14%,100% 100%,0 100%,0 0);
-    padding-bottom: 0;
 }
 
 #outstanding::before {
@@ -591,6 +583,10 @@ footer {
         justify-content: center;
         align-items: center;
         height: 60px;
+    }
+
+    #ideas p:last-child {
+        font-size: 1.3em;
     }
 
     .center-row {
