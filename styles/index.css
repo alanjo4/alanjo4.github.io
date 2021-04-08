@@ -354,9 +354,10 @@ body {
 
 #outstanding h3 {
     font-size: 3.5rem;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
     line-height: 1.4;
     font-weight: 700;
-    color: #f5a900;
+    color: white;
 }
 
 .circle-for-fa {
